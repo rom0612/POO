@@ -23,7 +23,7 @@ public class MathOp {
         Math.cos(0); // coseno-> Math.cos(grados en radianes)
         Math.tan(Math.PI/4);  // tangente-> Math.tan(grados en radianes)
 
-        //redondeos
+        //redndear
         Math.round(3.6); // redondeo normal: .0 - .4 baja, .5 -.9 sube --> Math.round(numDecimal)
         Math.floor(3.8); // redondeo hacia abajo siempre --> Math.floor(numDecimal)
 
