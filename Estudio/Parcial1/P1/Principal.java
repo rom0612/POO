@@ -4,12 +4,12 @@ public class Principal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Biblioteca bib = new Biblioteca();
-        /*Libro lib1 = new Libro("El principito", "Autor del principito");
+        Libro lib1 = new Libro("El principito", "Autor del principito");
         Libro lib2 = new Libro("Orgullo y Prejuicio", "Jane Austen");
         
         bib.agregarLibro(lib1);
         bib.agregarLibro(lib2);
-        */
+        
 
         int opcion =0;
 
@@ -23,15 +23,16 @@ public class Principal {
         System.out.println("4. Eliminar el ultimo libro");
         System.out.println("5. Salir");
         opcion=sc.nextInt();
+        sc.nextLine();
         switch(opcion){
             case 1:
                 bib.mostrarLibros();
                 break;
             case 2:
                 System.out.println("Nombre del libro: ");
-                String nombrelib = sc.next();
+                String nombrelib = sc.nextLine();
                 System.out.println("Autor del libro: ");
-                String autorLib= sc.next();
+                String autorLib= sc.nextLine();
                 Libro nuevoLibro = new Libro(nombrelib, autorLib);
                 bib.agregarLibro(nuevoLibro);
                 break;
