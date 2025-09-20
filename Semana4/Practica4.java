@@ -1,4 +1,4 @@
-public class EjPunto {
+public class Practica4 {
     public static void main (String [] args){
 
         //castear los args de string a int
@@ -10,17 +10,11 @@ public class EjPunto {
         Punto p1 = new Punto(x1, y1);
         Punto p2 = new Punto(x2, y2);
 
-        Distancia d = new Distancia(p1,p2);
-
-        System.out.println("Punto 1: " + p1);
-        System.out.println("Punto 2: " + p2);
-        System.out.println(d);
 
         Mensaje msj = new Mensaje();
 
-        System.out.println(msj);
 
-        Ventana vent = new Ventana(msj, p1, p2, d);
+        Ventana vent = new Ventana(msj, p1, p2);
         vent.setVisible(true);
 
 

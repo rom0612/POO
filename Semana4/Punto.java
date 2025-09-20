@@ -7,11 +7,15 @@ public class Punto {
     //Métodos
     //Imprimirlo
     public String toString(){
-        return "Punto: (x= " + x + ", y= " + y +")";
+        return "(" + x + ", " + y +")";
+    }
+    //calcular distancia
+    public double distancia (Punto p1, Punto p2){
+        return Math.hypot((p2.x-p1.x), (p2.y-p1.y));
     }
     //Constructores
     public Punto (){} //Inicializarlo sin argumentos (va a inicializar en los valores anteriores)
-    //Sobreescribiendo uno que si reciba argumentos
+    //constructor con argumentos
     public Punto (int x, int y){
         this.x=x;
         this.y=y;
