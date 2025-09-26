@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 public class Carrito {
+    //atributos
     ArrayList <Articulo> lista = new ArrayList<>(); 
 
-
+//metodos
     public void agregarArticulo(Articulo art){
         lista.add(art);
         System.out.println("Se agregó el artículo "+ art.articulo);

@@ -4,13 +4,11 @@ public class Proyecto {
     public static void main (String [] args){
         Scanner sc = new Scanner (System.in);
         Carrito carr = new Carrito();
-        // Articulo art1 = new Articulo("Manzana 1kg", 35);
-        // carr.agregarArticulo(art1);
 
         System.out.println("Bienvenido al carrito de compras");
         int opcion;
         do{
-            System.out.println("\n---Menú, sewlecciona una opcion---");
+            System.out.println("\n---Menú, selecciona una opción---");
             System.out.println("1. Ver lista de compras");
             System.out.println("2. Agregar artículo");
             System.out.println("3. ELiminar artículo");
@@ -22,7 +20,7 @@ public class Proyecto {
                     carr.printLista();
                     break;
                 case 2:
-                    System.out.println("NOmbre del articulo: ");
+                    System.out.println("Nombre del articulo: ");
                     String nomArt=sc.nextLine();
                     System.out.println("Precio del articulo: ");
                     Double precioArt=sc.nextDouble();
@@ -39,7 +37,7 @@ public class Proyecto {
                     System.out.println("Saliendo...");
                     break;
                 default:
-                System.out.println("opcion no valida");
+                System.out.println("Opcion no válida");
                     break;
             }
 
